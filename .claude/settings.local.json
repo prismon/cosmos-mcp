@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:gofastmcp.com)",
+      "Bash(mkdir:*)",
+      "Bash(ls:*)",
+      "Bash(uv init:*)",
+      "Bash(source ~/.bashrc)",
+      "Bash(uv add:*)",
+      "Bash(uv show:*)",
+      "Bash(uv pip:*)",
+      "Bash(uv run:*)",
+      "Bash(netstat:*)",
+      "Bash(ss:*)",
+      "Bash(python:*)",
+      "WebSearch",
+      "Bash(kill:*)"
+    ],
+    "deny": []
+  }
+}
