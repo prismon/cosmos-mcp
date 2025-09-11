@@ -14,7 +14,9 @@
       "Bash(ss:*)",
       "Bash(python:*)",
       "WebSearch",
-      "Bash(kill:*)"
+      "Bash(kill:*)",
+      "Bash(FASTMCP_DEBUG=1 uv run python start_server_dcr.py)",
+      "Bash(tee:*)"
     ],
     "deny": []
   }
