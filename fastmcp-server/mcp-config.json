@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "cosmos-mcp": {
+      "command": "uv",
+      "args": ["run", "python", "start_server.py"],
+      "cwd": "/home/josh/Projects/cosmos-mcp/fastmcp-server",
+      "env": {
+        "OPENC3_API_HOSTNAME": "training20.openc3.com",
+        "OPENC3_API_PORT": "443",
+        "OPENC3_API_SCHEMA": "https",
+        "OPENC3_API_USER": "admin",
+        "OPENC3_API_PASSWORD": "admin",
+        "OPENC3_KEYCLOAK_URL": "https://training20.openc3.com/auth"
+      }
+    }
+  }
+}

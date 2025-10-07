@@ -58,3 +58,15 @@ logs/
 htmlcov/
 .tox/
 .hypothesis/
+
+# uv
+.uv/
+uv.lock
+
+# Docker
+*.dockerignore.bak
+docker-compose.override.yml
+
+# MCP/FastMCP
+.mcp/
+mcp-data/

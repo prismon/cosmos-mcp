@@ -6,6 +6,8 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "aiohttp>=3.12.15",
-    "fastmcp>=2.12.2",
-    "openc3>=6.7.0",
+    "fastmcp>=2.12.4",
+    "openc3>=6.9.0",
+    "pytest>=8.4.2",
+    "pytest-asyncio>=1.2.0",
 ]

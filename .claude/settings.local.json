@@ -16,7 +16,13 @@
       "WebSearch",
       "Bash(kill:*)",
       "Bash(FASTMCP_DEBUG=1 uv run python start_server_dcr.py)",
-      "Bash(tee:*)"
+      "Bash(tee:*)",
+      "Bash(git push:*)",
+      "Bash(uv sync:*)",
+      "Bash(curl -X POST http://localhost:3443/mcp -H \"Content-Type: application/json\" -d '{\"\"\"\"jsonrpc\"\"\"\": \"\"\"\"2.0\"\"\"\", \"\"\"\"method\"\"\"\": \"\"\"\"tools/list\"\"\"\", \"\"\"\"params\"\"\"\": {}, \"\"\"\"id\"\"\"\": 1}')",
+      "Bash(curl:*)",
+      "Bash(rm:*)",
+      "Bash(python3:*)"
     ],
     "deny": []
   }
