@@ -5,7 +5,7 @@ All notable changes to the Cosmos MCP Server project will be documented in this 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.1.0] - 2025-01-11
+## [0.1.0] - 2025-10-08
 
 ### Added
 - Initial release of Cosmos MCP Server
@@ -54,18 +54,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Documentation
 - CLAUDE.md for AI assistant guidance
-- README.md with setup instructions
+- README.md with quick start and usage instructions
+- SPEC.md with complete technical specification
+- LICENSE file (MIT)
 - Inline documentation for all tools
-- OAuth configuration examples
+- OAuth enable/disable instructions
 
 ### Known Issues
 - OAuth .well-known endpoints require proper configuration for full client discovery
 - Some OpenC3 functions with **kwargs cannot be exposed as MCP tools
 - DCR token expiration needs manual renewal
+- Port 3443 default may conflict with other services
 
-### Future Improvements
-- Add more OpenC3 automation tools
-- Implement webhook support for telemetry monitoring
-- Add batch command execution
-- Improve OAuth metadata endpoint generation
-- Add prometheus metrics endpoint
+### Security
+- OAuth/OIDC support via Keycloak (optional)
+- No-auth mode for development/testing
+- Environment-based credential management
+- Token verification with JWTVerifier
