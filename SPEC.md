@@ -51,6 +51,9 @@ cosmos-mcp/
 
 ## Server Configurations
 
+> **⚠️ OAuth/DCR Status:** OAuth and Dynamic Client Registration features are currently **incomplete and in development**.
+> For production use, only the no-auth mode is recommended in trusted environments until OAuth implementation is complete.
+
 The server supports three authentication modes. Choose the appropriate configuration based on your security requirements.
 
 ### 1. No Authentication Mode (Development/Testing)

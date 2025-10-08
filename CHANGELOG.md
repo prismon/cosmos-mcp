@@ -5,6 +5,16 @@ All notable changes to the Cosmos MCP Server project will be documented in this 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Changed
+- Updated Dockerfile to use server_dynamic_v2.py with all 39 tools (was using old server.py with only 4 tools)
+- Removed obsolete server files: server.py, server_dynamic.py, server_oauth.py
+- Added warnings that OAuth/DCR implementations are incomplete and in development
+
+### Fixed
+- Fixed missing tools issue - server now exposes all 39 OpenC3 tools instead of just 4
+
 ## [0.1.0] - 2025-10-08
 
 ### Added
