@@ -108,6 +108,9 @@ Once connected, AI assistants can use tools like:
 
 ## Authentication
 
+> **⚠️ Note:** OAuth and DCR authentication features are currently in development and incomplete.
+> Production use should only use the no-auth mode in trusted environments until OAuth implementation is finalized.
+
 ### Disable OAuth (Local Development)
 
 Use `start_server.py` which runs without authentication:
@@ -116,7 +119,9 @@ Use `start_server.py` which runs without authentication:
 uv run python start_server.py
 ```
 
-### Enable OAuth (Production)
+### Enable OAuth (Production - Work in Progress)
+
+**Status:** OAuth/OIDC and DCR implementations are incomplete and under active development.
 
 1. Register OAuth client in Keycloak:
    - Client ID: `mcp`
