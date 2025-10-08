@@ -8,7 +8,8 @@ RUN pip install uv
 
 # Copy project files
 COPY pyproject.toml uv.lock ./
-COPY server.py ./
+COPY server_dynamic_v2.py ./
+COPY start_server.py ./
 
 # Install dependencies
 RUN uv sync --frozen
@@ -16,5 +17,5 @@ RUN uv sync --frozen
 # Expose the port
 EXPOSE 3443
 
-# Run the server
-CMD ["uv", "run", "python", "server.py"]
+# Run the server with proper environment setup
+CMD ["uv", "run", "python", "start_server.py"]
